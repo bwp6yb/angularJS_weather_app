@@ -1,0 +1,28 @@
+.navbar-header p {
+	margin: 0px;
+}
+
+a.btn.btn-primary {
+  margin-left: 30%;
+  margin-top: 3%;
+  width: 40%;
+  height: 50px;
+}
+
+.btn {
+	padding: 7px 12px;
+	font-size: 22px;
+}
+
+#homeChart {
+	margin-top: 20%;
+}
+
+.panel-heading {
+	text-align: center;
+}
+
+.panel-body {
+  text-align: center;
+}
+

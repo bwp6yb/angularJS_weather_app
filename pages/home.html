@@ -1,0 +1,24 @@
+<div class="col-md-6 col-md-offset-3">
+	<h2 align="center">Forecast by City</h2><br />
+	<div class="form-group">
+		<input type="text" ng-model="city" class="form-control" />
+	</div>
+	<a href="#/home" class="btn btn-primary">Get Forecast</a>
+	<br /><br />
+</div><br />
+
+<div ng-repeat="w in weatherResult.list" id="homeChart">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{{ convertToDate(w.dt) | date: 'MMM d, y' }} - {{ weatherResult.city.name }}</h3>
+			</div>
+			<div class="panel-body">
+				<p>Day temperature: {{ convertToFahrenheit(w.temp.day) }}</p>
+				<p>Weather conditions: {{ w.weather[0].description }}</p>
+				<p>Wind speed: {{ w.speed }} mph</p>
+				<p>Humidity: {{ w.humidity }}%</p>
+			</div>
+		</div>
+	</div>
+</div>

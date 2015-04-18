@@ -1,0 +1,95 @@
+<h2 align="center">Weather Forecast for Largest U.S. Cities</h2>
+<br /><br />
+<table class="table table-striped">
+    <tr>
+        <th>City</th>
+        <th>Population</th>
+        <th>Temperature</th>
+        <th>Conditions</th>
+        <th>Humidity</th>
+        <th>Wind Speed</th>
+    </tr>
+    <tr ng-repeat="w in newyork.list">
+        <td>{{ newyork.city.name }}</td>
+        <td>8,143,197</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in losangeles.list">
+        <td>{{ losangeles.city.name }}</td>
+        <td>3,844,829</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in chicago.list">
+        <td>{{ chicago.city.name }}</td>
+        <td>2,842,518</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in houston.list">
+        <td>{{ houston.city.name }}</td>
+        <td>2,016,582</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in philadelphia.list">
+        <td>{{ philadelphia.city.name }}</td>
+        <td>1,463,281</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in phoenix.list">
+        <td>{{ phoenix.city.name }}</td>
+        <td>1,461,575</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in sanantonio.list">
+        <td>{{ sanantonio.city.name }}</td>
+        <td>1,256,509</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in sandiego.list">
+        <td>{{ sandiego.city.name }}</td>
+        <td>1,255,540</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in dallas.list">
+        <td>{{ dallas.city.name }}</td>
+        <td>1,213,825</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+    <tr ng-repeat="w in sanjose.list">
+        <td>{{ sanjose.city.name }}</td>
+        <td>912,332</td>
+        <td>{{ convertToFahrenheit(w.temp.day) }}</td>
+        <td>{{ w.weather[0].description }}</td>
+        <td>{{ w.humidity }}</td>
+        <td>{{ w.speed }}</td>
+    </tr>
+</table>
+
+
+
